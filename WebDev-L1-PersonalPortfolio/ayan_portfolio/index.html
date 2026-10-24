@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayan's personal portfolio website — skills, projects, and contact information.">
+  <title>Ayan | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Ayan Dev home"><span>Web developer</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="navMenu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-cta" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</div>
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
+        <h1>Ayan <span class="gradient-text">Singharay.</span></h1>
+        <h2>BCA Student <span class="separator">/</span> Aspiring Web Developer</h2>
+        <p class="hero-intro">I enjoy turning ideas into clean, useful digital experiences. I'm learning web development, exploring new technologies, and building projects one step at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Let's connect</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span class="social-divider">·</span>
+          <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Developer profile card">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="card-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="card-label">PROFILE.EXE</span></div>
+          <div class="avatar">A<span class="avatar-spark">✦</span></div>
+          <h3>Ayan Singharay</h3>
+          <p class="profile-role">Aspiring Developer</p>
+          <div class="profile-status"><span class="pulse-dot"></span> Always learning</div>
+          <div class="profile-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="code-line"><span class="code-purple">const</span> <span class="code-blue">goal</span> = <span class="code-green">"keep building";</span></div>
+        </div>
+        <div class="floating-chip chip-code"><span>&lt;/&gt;</span> Clean code</div>
+        <div class="floating-chip chip-light"><span>✦</span> Creative ideas</div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading">
+        <h2>ABOUT<span class="gradient-text"ME</span></h2>
+      </div>
+      <div class="about-panel">
+        <div class="about-mark"><span>ABOUT</span></div>
+        <p>I'm a Bachelor of Computer Applications (BCA) student with an interest in web development and software technology. I like learning how websites work, practising programming, and creating simple, user-friendly experiences. I'm working toward strengthening my skills through hands-on projects and real-world experience.</p>
+      </div>
+    </section>
+    <section class="section-wrap section-block" id="skills">
+      <div class="section-heading">
+        <h2>Skills & <span class="gradient-text">technologies.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon icon-html">5</div><h3>HTML5</h3><p>Semantic page structure</p><div class="skill-track"><span style="width:78%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-css">✳</div><h3>CSS3</h3><p>Layouts & responsive design</p><div class="skill-track"><span style="width:68%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-js">JS</div><h3>JavaScript</h3><p>Interactive experiences</p><div class="skill-track"><span style="width:42%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-php">php</div><h3>PHP</h3><p>Server-side basics</p><div class="skill-track"><span style="width:40%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-db">▤</div><h3>MySQL</h3><p>Database fundamentals</p><div class="skill-track"><span style="width:48%"></span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-git">⌘</div><h3>Git & GitHub</h3><p>Version control basics</p><div class="skill-track"><span style="width:45%"></span></div></article>
+      </div>
+    </section>
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading project-heading">
+        <div><h2>PROJECT<span class="gradient-text"></span></h2></div>
+        <span class="project-count">02 PROJECT CONCEPTS</span>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art temp-art"><div class="art-sun"></div><div class="thermo">🌡</div><span class="art-label">TEMP / CONVERT</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>01 / FRONT-END</span><span class="project-status">PROJECT IDEA</span></div>
+            <h3>Temperature Converter</h3>
+            <p>A simple tool for converting Celsius, Fahrenheit, and Kelvin with real-time input validation and clear results.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://github.com/YOUR_USERNAME/temperature-converter" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art student-art"><div class="student-window"><span></span><span></span><span></span><div class="fake-row"></div><div class="fake-row short"></div><div class="fake-row"></div></div><span class="art-label">STUDENT / PORTAL</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>02 / WEB APP</span><span class="project-status">PROJECT IDEA</span></div>
+            <h3>Student Management System</h3>
+            <p>A student-focused application concept for organising student details and managing records through a simple interface.</p>
+            <div class="tag-list"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+            <a class="project-link" href="https://github.com/YOUR_USERNAME/student-management-system" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section-wrap section-block contact-section" id="contact">
+      <div class="contact-glow"></div>
+      <h2>CONTACT<span></span><span class="gradient-text"></b>ME</span></h2>
+      <p class="contact-intro">I'm open to connecting, learning from others, and exploring internship opportunities.</p>
+      <a class="button button-primary contact-button" href="mailto:ayansingharay190@gmail.com">Say hello by email <span aria-hidden="true">↗</span></a>
+      <div class="contact-links">
+        <a href="https://github.com/ayan2924">GitHub <span>↗</span></a>
+        <a href="https://www.linkedin.com/in/ayan-singharay-03389a301?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn <span>↗</span></a>
+        <a href="mailto:ayansingharay190@gmail.com">Email <span>↗</span></a>
+  </a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="#home">ayan<span>.dev</span></a>
+    <p>Designed by © <span id="year"></span> Ayan.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

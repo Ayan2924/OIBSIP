@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="icon">🌡️</div>
+        <h1>Temperature Converter</h1>
+        <p class="subtitle">
+            Convert Celsius, Fahrenheit and Kelvin
+        </p>
+        <form id="converterForm" novalidate>
+            <label for="temperature">Enter Temperature</label>
+            <input
+                type="text"
+                inputmode="decimal"
+                id="temperature"
+                placeholder="Enter a number, e.g. 25"
+                autocomplete="off"
+                aria-describedby="error"
+            >
+            <label for="unit">Select Input Unit</label>
+            <select id="unit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+            <p id="error" role="alert" aria-live="polite"></p>
+            <button type="submit">Convert Temperature</button>
+            <button type="button" id="resetBtn" class="reset-btn">
+                Reset
+            </button>
+        </form>
+        <section id="results" class="results" aria-live="polite" hidden>
+            <h2>Conversion Results</h2>
+            <div class="result-item">
+                <span>Celsius</span>
+                <strong id="celsius">--</strong>
+            </div>
+            <div class="result-item">
+                <span>Fahrenheit</span>
+                <strong id="fahrenheit">--</strong>
+            </div>
+            <div class="result-item">
+                <span>Kelvin</span>
+                <strong id="kelvin">--</strong>
+            </div>
+        </section>
+        <footer>Built with HTML, CSS & JavaScript</footer>
+    </main>
+</body>
+</html>
